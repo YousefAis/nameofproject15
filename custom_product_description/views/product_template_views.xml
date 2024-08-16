@@ -1,0 +1,18 @@
+<odoo>
+    <template id="product_template_view_inherit" inherit_id="website_sale.product">
+        <xpath expr="//div[@id='product_detail']" position="after">
+            <section class="s_title pt40 o_colored_level pb0" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+                <div class="container s_allow_columns">
+                    <h4 class="o_default_snippet_text" style="text-align: left;"><strong><span class="h4-fs">Product Description</span></strong><br></h4>
+                </div>
+            </section>
+            <section class="s_table_of_content pt24 pb24 o_colored_level o_cc o_cc1 bg-white-85" data-snippet="s_table_of_content" data-name="Table of Content" style="position: relative; background-image: none;" data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Rainy/08_001&quot;,&quot;flip&quot;:[],&quot;showOnMobile&quot;:false,&quot;animated&quot;:&quot;true&quot;}">
+                <div class="o_we_shape o_web_editor_Rainy_08_001 o_we_animated"></div>
+                <h2 id="table_of_content_heading_ingredients" data-anchor="true"><strong><span class="h5-fs">Ingredients</span></strong></h2>
+                <p>
+                    <t t-esc="product.ingredients"/>
+                </p>
+                </section>
+        </xpath>
+    </template>
+</odoo>
